@@ -1,7 +1,7 @@
 ---
 - name: Install Wordpress Server
   hosts: webservers
-  remote_user: root
+  remote_user: jimmy
   gather_facts: no # don't gather facts because /usr/bin/python isn't set
   pre_tasks:
     - name: apt-get update
